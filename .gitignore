@@ -36,6 +36,8 @@
 ehthumbs.db
 Thumbs.db
 
+# Eclipse files #
+######################
 .classpath
 .project
 .settings/org.eclipse.jdt.core.prefs
