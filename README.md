@@ -1,5 +1,6 @@
 # BullsEyeClickingGame
-JavaFX game where the player clicks on a bullseye and collects points on each click.
+* JavaFX game where the player clicks on a bullseye and collects points on each click.
+* Code adopted from: https://gamedevelopment.tutsplus.com/tutorials/introduction-to-javafx-for-game-development--cms-23835
 
 ## Eclipse Setup
 * Used the following link to setup a new Eclipse Java Project: https://openjfx.io/openjfx-docs/
