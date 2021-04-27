@@ -12,9 +12,9 @@ import javafx.scene.image.Image;
 public class BullsEyeClickingGame extends Application
 {
 	public static void main(String[] args) 
-    {
-        launch(args);
-    }
+	{
+		launch(args);
+	}
 
 	@Override
 	public void start(Stage stage) throws Exception 
@@ -23,25 +23,25 @@ public class BullsEyeClickingGame extends Application
 		
 		stage.setTitle("Click the Target!");
         
-        IntegerValue points = new IntegerValue(0);
-        Circle bullsEye = new Circle(100, 100, 32);
+        	IntegerValue points = new IntegerValue(0);
+        	Circle bullsEye = new Circle(100, 100, 32);
 
-        Group root = new Group();
-        Scene scene = new Scene(root);
-        scene.setOnMouseClicked(new ClickedMouseEventHandler(bullsEye, points));
-        stage.setScene(scene);
+        	Group root = new Group();
+        	Scene scene = new Scene(root);
+        	scene.setOnMouseClicked(new ClickedMouseEventHandler(bullsEye, points));
+        	stage.setScene(scene);
 
-        Canvas canvas = new Canvas(500, 500);
-        root.getChildren().add(canvas);
+        	Canvas canvas = new Canvas(500, 500);
+        	root.getChildren().add(canvas);
 
-        GraphicsContext graphicsContext = canvas.getGraphicsContext2D();
-        graphicsContext.setFont(Font.font("Andale Mono", FontWeight.BOLD, 24));
-        graphicsContext.setStroke(Color.BLACK);
-        graphicsContext.setLineWidth(1);
+        	GraphicsContext graphicsContext = canvas.getGraphicsContext2D();
+        	graphicsContext.setFont(Font.font("Andale Mono", FontWeight.BOLD, 24));
+        	graphicsContext.setStroke(Color.BLACK);
+        	graphicsContext.setLineWidth(1);
         
-        GameLoop gameLoop = new GameLoop(graphicsContext, new Image(imageLocation), bullsEye, points);
-        gameLoop.start();
+        	GameLoop gameLoop = new GameLoop(graphicsContext, new Image(imageLocation), bullsEye, points);
+        	gameLoop.start();
 
-        stage.show();
+        	stage.show();
 	}
 }

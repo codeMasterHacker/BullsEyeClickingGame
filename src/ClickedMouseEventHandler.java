@@ -16,14 +16,14 @@ public class ClickedMouseEventHandler implements EventHandler<MouseEvent>
 	public void handle(MouseEvent mouseEvent) 
 	{
 		if (bullsEye.containsPoint(mouseEvent.getX(), mouseEvent.getY()))
-        {
-            double x = 50 + 400 * Math.random(); 
-            double y = 50 + 400 * Math.random();
-            bullsEye.setCenter(x,y);
+        	{
+            		double x = 50 + 400 * Math.random(); 
+            		double y = 50 + 400 * Math.random();
+            		bullsEye.setCenter(x,y);
             
-            points.value++;
-        }
-        else
-            points.value = 0;
+            		points.value++;
+        	}
+        	else
+            		points.value = 0;
 	}
 }
